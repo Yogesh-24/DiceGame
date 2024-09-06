@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    color: #2D2D2D;
+}
+
+.heading {
+    font-size: 3rem;
+    font-family: 'Bungee Tint', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #E23744; /* Deep red for strong emphasis */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.dice {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: #F4F4F2; /* Light neutral background */
+    transition: transform 0.3s ease-in-out;
+}
+
+.dice:hover {
+    transform: scale(1.05);
+}
+
+.player {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333333; /* Darker gray for better readability */
+}
+
+.btn-container {
+    margin-top: 50px;
+}
+
+.btn {
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: #E23744; /* Same deep red for consistency */
+    color: #FFFFFF; /* White text for contrast */
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #BF1E35; /* Slightly darker red on hover */
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
